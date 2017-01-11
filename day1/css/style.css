@@ -50,5 +50,5 @@ li.seen.good {
 
 a:hover {
     text-decoration: underline;
-    color: white;
+    color: red;
 }
