@@ -1,0 +1,24 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.pinkie {
+    background-color: deeppink;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.greenie {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
