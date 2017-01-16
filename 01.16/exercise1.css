@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.header {
+    height: 50px;
+    background-color: #999999;
+}
+
+.content {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.content p {
+    border-left: 2px solid teal;
+    padding-left: 1em;
+}
+
+.content p:first-letter {
+    font-size: 3em;
+    float: left;
+    line-height: 1em;
+    margin-top: 0.1em;
+}

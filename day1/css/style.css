@@ -3,12 +3,10 @@ body {
     font-family: 'Arima Madurai', cursive;
 }
 
-
 span {
     color: red;
     font-weight: bold;
 }
-
 
 h1 {
     color: blue;
@@ -37,11 +35,11 @@ p.green {
     background-color: green;
 }
 
-.blue{
+.blue {
     background-color: blue;
 }
 
-p.red a{
+p.red a {
     color: purple;
 }
 
