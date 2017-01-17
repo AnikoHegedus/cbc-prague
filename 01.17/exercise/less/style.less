@@ -1,0 +1,62 @@
+@width-height: 20px;
+@padding: 15px; 
+@darkener: #333;
+.errored {
+    background-color: pink;
+    color: red;
+    border: 1px solid;
+}
+
+.informationed {
+    background-color: lightblue;
+    color: blue;
+    border: 1px solid;
+}
+
+.warninged {
+    background-color: lightyellow;
+    color: orange;
+    border: 1px solid;
+}
+
+.successed {
+    background-color: lightgreen;
+    color: green;
+    border: 1px solid;
+}
+
+/*Real CSS starts here*/
+.message {
+    background-color: lightgrey;
+    margin: 5px;
+    border: 1px solid darkgrey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img {
+    height: @width-height;
+    width:  @width-height;
+    padding: @padding;
+}
+
+.error {
+    .errored;
+    border-color: #ffc0cb - @darkener;
+}
+
+.info{
+    .informationed;
+    border-color: #add8e6 - @darkener;
+}
+
+.warning {
+    .warninged;
+    border-color: #ffffe0 - @darkener;
+}
+
+.success {
+    .successed;
+    border-color: #90ee90 - @darkener;
+}

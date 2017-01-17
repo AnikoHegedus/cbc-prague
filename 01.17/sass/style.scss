@@ -1,0 +1,26 @@
+
+$primary-color: #000000;
+
+body {
+    color: $primary-color;
+}
+
+
+.bordered {
+    border: 1px solid red;
+}
+
+p {
+    @extend .bordered;
+    background-color: yellow;
+}
+
+@import "shadows";
+
+@mixin font-size($font_size) {
+    font-size: 2 * $font_size;
+}
+
+.box {
+    @include font-size(15px);
+}

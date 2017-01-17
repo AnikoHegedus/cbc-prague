@@ -1,0 +1,43 @@
+@size: 14px;
+@main_color: orange;
+@highlight_color: darkblue;
+.shadowed {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1,
+h2 {
+    color: @main_color;
+}
+
+p {
+    font-size: @size;
+    .shadowed;
+}
+
+section {
+    border-bottom: 1px solid;
+    color: @highlight_color;
+}
+
+.bordered {
+    border: 1px solid red;
+}
+
+.list-item {
+    background-color: yellow;
+    .bordered;
+}
+
+.first {
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        background-color: #e0e0e0;
+        a {
+            color: @highlight_color;
+        }
+    }
+}

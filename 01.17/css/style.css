@@ -1,0 +1,31 @@
+.shadowed {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1,
+h2 {
+  color: #ffa500;
+}
+p {
+  font-size: 14px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section {
+  border-bottom: 1px solid;
+  color: #00008b;
+}
+.bordered {
+  border: 1px solid red;
+}
+.list-item {
+  background-color: yellow;
+  border: 1px solid red;
+}
+.first a {
+  text-decoration: none;
+}
+.first p {
+  background-color: #e0e0e0;
+}
+.first p a {
+  color: #00008b;
+}
