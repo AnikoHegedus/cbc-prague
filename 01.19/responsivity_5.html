@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Responsivity basics</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    #header {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 0.5em;
+      overflow: hidden;
+      min-height: 2em;
+    }
+    #header .menu {
+      float: right;
+    }
+    #header .menu li {
+      display: inline-block;
+      margin: 0 1em;
+    }
+    #header .burger {
+      height: 2em;
+      position: absolute;
+      right: 1.5em;
+      top: 1em;
+      display: none;
+    }
+    h1 {
+      font-size: 5em;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2em;
+      text-align: center;
+    }
+    #paragraphs {
+      overflow: hidden;
+    }
+    #paragraphs p {
+      float: left;
+      width: 48%;
+      margin: 1%;
+    }
+    #images {
+      text-align: center;
+    }
+    #images img {
+      display: inline-block;
+      width: 30%;
+      margin: 1%;
+      min-width: 250px;
+    }
+
+@media (max-width: 600px){
+    #header .burger{
+        display: flex;
+    }
+    
+    ul {
+        display: none;
+    }
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="header">
+    <ul class="menu">
+      <li>Home</li>
+      <li>Moe's</li>
+      <li>Somewhere</li>
+      <li>Somewhere else</li>
+      <li>Contact</li>
+    </ul>
+    <img class="burger" src="burger.png" />
+  </div>
+
+  <div id="content">
+
+    <h1>My responsive page</h1>
+
+    <h2>A testing ground to try out the basic techniques of responsive webdesign.</h2>
+
+    <div id="paragraphs">
+      <p class="first">Lorem ipsum dolor sit amet consectetuer cursus felis tortor mattis id. Enim urna mauris Sed pellentesque justo Suspendisse id Donec lacus elit. Molestie Nam tristique cursus ligula in et consequat Quisque auctor Aenean. Porttitor tincidunt consequat Sed est id sem Pellentesque aliquet nibh sed. Convallis dui risus netus ligula tellus ut justo libero eros convallis. Rutrum sem leo ac Mauris dictum consequat velit In Nulla est. Orci at et quis tortor consequat augue sit faucibus dignissim.</p>
+  <p class="second">Laoreet semper Morbi tincidunt egestas In Sed facilisi libero Integer et. Faucibus wisi Vestibulum Praesent Vivamus id semper ante justo urna pretium. Ligula natoque hendrerit congue mauris amet et Vestibulum risus elit scelerisque. Diam Phasellus sed scelerisque in malesuada arcu neque Aliquam amet arcu. Tempor Aliquam et Nunc dui mauris ac laoreet condimentum tincidunt ut. Sit tellus sagittis dis cursus sollicitudin ornare volutpat augue vestibulum ut. Ligula Maecenas nibh interdum congue Sed quis et orci tristique dolor. Quis sem Nam nunc consequat nibh nisl non Curabitur et consectetuer. Consequat tristique hac.</p>
+    </div>
+
+    <div id="images">
+      <img src="image.jpg" alt="Image">
+      <img src="image.jpg" alt="Image">
+      <img src="image.jpg" alt="Image">
+      <img src="image.jpg" alt="Image">
+      <img src="image.jpg" alt="Image">
+      <img src="image.jpg" alt="Image">
+      <img src="image.jpg" alt="Image">
+      <img src="image.jpg" alt="Image">
+    </div>
+
+  </div>
+
+  
+</body>
+
+</html>
