@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="black_button">Black</button>
+    <button id="silver_button" onclick="document.body.style.backgroundColor = 'silver'">Silver</button>
+    <button id="red_button">Red</button>
+    <button id="pink_button">Pink</button>
+    <button id="lime_button" onclick="document.body.style.backgroundColor = 'lime' "document.body.style.color = 'darkblue'">Lime</button>
+    <button id="white_button">White</button>
+    <script>
+        document.body.style.backgroundColor = "blue";
+
+        var pink = document.getElementById("pink_button");
+        pink.onclick = function () {
+            document.body.style.backgroundColor = "pink";
+        };
+
+        var red = document.getElementById('red_button');
+        red.onclick = function () {
+            document.body.style.backgroundColor = "red";
+        };
+
+        var black = document.getElementById('black_button');
+        black.addEventListener("click", function () {
+            document.body.style.color = "white";
+            document.body.style.backgroundColor = "black";
+        });
+
+        var white = document.getElementById('white_button');
+        white.addEventListener("click", function () {
+            document.body.style.color = "lightgreen";
+            document.body.style.backgroundColor = "white";
+        });
+    </script>
+
+
+<h1 id="heading">A JavaScript playground</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetuer cursus felis tortor mattis id. Enim urna mauris Sed pellentesque justo Suspendisse id Donec lacus elit. Molestie Nam tristique cursus ligula in et consequat Quisque auctor Aenean. Porttitor tincidunt consequat Sed est id sem Pellentesque aliquet nibh sed. Convallis dui risus netus ligula tellus ut justo libero eros convallis. Rutrum sem leo ac Mauris dictum consequat velit In Nulla est. Orci at et quis tortor consequat augue sit faucibus dignissim.</p>
+    <p>Laoreet semper Morbi tincidunt egestas In Sed facilisi libero Integer et. Faucibus wisi Vestibulum Praesent Vivamus id semper ante justo urna pretium. Ligula natoque hendrerit congue mauris amet et Vestibulum risus elit scelerisque. Diam Phasellus sed scelerisque in malesuada arcu neque Aliquam amet arcu. Tempor Aliquam et Nunc dui mauris ac laoreet condimentum tincidunt ut. Sit tellus sagittis dis cursus sollicitudin ornare volutpat augue vestibulum ut. Ligula Maecenas nibh interdum congue Sed quis et orci tristique dolor. Quis sem Nam nunc consequat nibh nisl non Curabitur et consectetuer. Consequat tristique hac.</p>
+
+
+</body>
+
+</html>
