@@ -1,5 +1,7 @@
 <?php 
 
+phpinfo(); die();
+
     require "functions.php";
 
     $my_greeting = "Hello, world!";
