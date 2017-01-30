@@ -7,7 +7,7 @@ var_dump($_POST);*/
 
 ini_set("display_errors", 1);
 
-/*header("Location: forms.php");*/
+header("Location: forms.php");
 
 if(!empty($_POST)){
     echo "Adding product: " . $_POST["product"];
