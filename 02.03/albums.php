@@ -30,6 +30,6 @@ foreach ($owners as $id => $name){
 }
 ?>
 </select>
- <input name="owner"><br>
+ <!--<input name="owner">--><br>
 <input type="submit">
 </form>
