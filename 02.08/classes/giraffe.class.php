@@ -30,7 +30,6 @@ class giraffe extends animal {
         $this -> name = $name;
         $this -> location = $location;
         
-        
     }
 
     public function __toString(){
