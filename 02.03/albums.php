@@ -19,6 +19,8 @@ $owners = [];
 foreach ($statement -> fetchAll() as $value){
     $owners[$value["id"]] = $value["firstname"] . " " . $value["lastname"]; 
 }
+
+var_dump($owners[$value["id"]]);
 ?>
 
 <form action="" method="post">
