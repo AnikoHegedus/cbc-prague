@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello World!");
+        /*var res = prompt("What now?");
+        console.log(res);*/
+
+        var str = "Visit the pub!";
+        var new_str = str.replace("pub", "CodingBootcamp");
+        console.log(new_str);
+
+       /* var num = prompt("How big the triangle should be?");
+        
+        var line = "";
+        for(var i = 0; i < num; i++){
+           line += "*";
+           console.log(line);
+        }*/
+
+        var input = "";
+        
+        do{
+            input = "How old are you?";
+        }while(isNaN(input) || input < 0 || input > 200);
+
+        if(isNaN(input)){
+            alert("I asked your age!");
+        }else{
+            if(input<18){
+                console.log("Go to school then!");
+            }else if (input > 60){
+                console.log("Go to Florida!")
+            }else{
+                var job = prompt("Do you have a job? (y/n)");
+                if (job == "y"){
+                console.log("Go to work!");
+                } else {
+                console.log("Get a job!");
+            }
+        }
+        }
+        
+
+
+    </script>
+</body>
+</html>

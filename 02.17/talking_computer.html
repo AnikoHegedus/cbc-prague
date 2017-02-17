@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var children;
+        var name = "";
+        var names = [];
+        do{
+            children = prompt("How many children do you have?");
+        }while (isNaN(children) || children > 100);
+
+        if(children == 0){
+            console.log("Thanks for replying.");
+        }else{
+            for(var i = 1; i<=children; i++){
+                name = prompt("What's the name of child no" + i + "?");
+                names.push(name);
+            }
+            var uniqueName = true;
+            var greeting = "";
+                for(var j = 1; j<=i; j++){
+                    if(names[i] == names[j]){
+                        uniqueName = false;
+                    }
+        }
+        
+        }
+        if(uniqueName == true){
+        console.log("Say hi to " + greeting);
+        }
+        
+        
+
+    </script>
+</body>
+</html>
