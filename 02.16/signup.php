@@ -10,6 +10,18 @@ if($_POST){
     header("Location: index.php");
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="header-admin">
+        <h1>My Language School</h1>
+        <h2>Admin site</h2>
+    </header>
 <form action="" method="post">
     Name:<br>
     <input type="text" name="name"><br>
@@ -19,3 +31,5 @@ if($_POST){
     <input type="password" name="password"><br>
     <input type="submit">
 </form>
+</body>
+</html>
