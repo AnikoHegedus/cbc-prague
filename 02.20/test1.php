@@ -5,7 +5,7 @@ class address{
    	protected $street = null;
     protected $house_nr = null;
     protected $city = null;
-   	protected static $country = "hu";
+   	protected $country = "hu";
     protected $postal_code = null;
 
     public static $local_country = null;
@@ -14,8 +14,8 @@ class address{
         static::$local_country = $local_country;
     } 
 
-    public static function isLocal(){
-        if(static::$country == static::$local_country){
+    public function isLocal(){
+        if($this -> country == static::$local_country){
             return true;
         }else{
             return false;
@@ -27,7 +27,7 @@ class address{
 
 $cim = new address();
 address::setLocalCountry("de");
-$local=address::isLocal();
+$local=$cim->isLocal();
 
 var_dump($local);
 
