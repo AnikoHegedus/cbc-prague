@@ -1,6 +1,5 @@
 <?php
 
-
 class giraffe extends animal {
     public static $my_giraffes = array();
 
