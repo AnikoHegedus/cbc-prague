@@ -1,0 +1,41 @@
+
+    form:invalid input[type=submit]{
+        visibility: hidden;
+    }
+
+    form:valid input[type=submit]{
+        visibility: visible;
+    }
+
+
+    form{
+    display: block;
+    }
+
+    input,
+    textarea{
+        width: 100%;
+    }
+
+    label::placeholder{
+        font-style: italic;
+    }
+
+    label:required{
+        border-color:#333;
+
+        label:valid:not(:focus){
+            background-color: hsla(128, 100%, 50%, 0.2);
+        }
+    }
+
+input:required:valid{
+    background-color: green;
+}
+
+input{
+    background-image: url("check.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: right 3px ;
+}
