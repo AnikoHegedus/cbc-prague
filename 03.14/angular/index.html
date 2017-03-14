@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+    <script src="https://code.angularjs.org/latest/angular.js"></script>
+    <script src="https://code.angularjs.org/latest/angular-route.js"></script>
+    <script src="myApp.module.js"></script>
+    <script src="studentList.controller.js"></script>
+    <script src="data.php"></script>
+</head>
+<body>
+    <h1>This is an Angular application</h1>
+
+<script>
+    // create new module
+    var my_module = angular.modul("myModule", []);
+
+    // retrieve the newly created module
+    var the_module_i_created = angular.module(myModule);
+
+    // create a module with dependency (other module that is needed for my module) on ngRoute module
+    var another_module = angular.module("moduleWithRouting", ["ngRoute"]);
+</script>
+
+
+    <div ng-app="myApp" ng-init="name = 'Jan'; color='red'">
+        The result of the calculation is {{ 3 + 3 }}
+    
+    
+        <div>This is the same as <span ng-bind="3 + 3"></span></div>
+
+
+        <div style="color: {{color}}">My name is {{name}}</div>
+
+        <div ng-controller="studentList">
+            There are {{total_students - unofficial_quitters}} students in the course. <br>
+
+            {{students[0].name}}
+
+            <input type="text" value="Jan" ng-model="my_name">
+            My name is {{my_name}}
+        </div>
+
+        <div ng-controller="productDetail">
+            <h2>{{product_name}}</h2>
+            <div class="description">
+                {{description}}
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
