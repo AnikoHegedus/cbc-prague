@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+    <script src="https://code.angularjs.org/latest/angular.js"></script>
+    <script src="https://code.angularjs.org/latest/angular-route.js"></script>
+    <script src="myApp.module.js"></script>
+</head>
+</head>
+<body>
+    {{ 1+1 }}
+
+    <div ng-init="fruits = ['Apple', 'Orange', 'Peach']"></div>
+    <ul>
+        <li ng-repeat="fruit in fruits | filter: letter">
+            {{fruit}}
+        </li>
+    </ul>
+
+<ul ng-controller="productList">
+    <select ng-modell="order_by">
+        <option value="price">Order by price</option>
+        <option value="name">Order by name</option>
+    </select>
+
+ASC:<input type="radio" name="order_way" value="asc" ng-modell="order_way" checked>
+DESC:<input type="radio" name="order_way" value="desc" ng-modell="order_way">
+</ul>
+
+<li ng-repeat="product in products | orderBy: oreder_by : order_way=='asc'">
+    <h3>{{product.name}}</h3>
+    <div class="price">{{product.price}}</div>
+</li>
+
+</body>
+</html>
