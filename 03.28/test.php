@@ -41,5 +41,5 @@ class product{
 $my_clothes = new product();
 $my_clothes->meret = "XL";
 $my_clothes->product::getVersion();
-/*product::__get("red");*/
+
 var_dump($my_clothes);

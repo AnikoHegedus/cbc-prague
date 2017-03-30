@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#page {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.poster {
+    float: left;
+    width: 10em;
+    margin: 0 1em 1em 0;
+}
+
+.poster img {
+    width: 100%;
+}
+
+.info {
+    margin-left: 11em;
+}
+
+.label {
+    color: #999999;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+h1 {
+    margin: 0 0 0.5em;
+}
+
+.year {
+    font-style: italic;
+    margin: 0.5em 0;
+}
+
+.plot {
+    line-height: 1.4em;
+}
